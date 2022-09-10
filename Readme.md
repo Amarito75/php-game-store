@@ -1,9 +1,9 @@
 # This website is made with PHP and MySQL
 
-#### To launch the website :
+#### To launch the website you need to clone the repo into your wampserver file
 
-    `git clone <URL>`
-
-### Paste the folder _gamestore.sql_ into PHPMyAdmin
+    
+   
+#### Paste the folder _gamestore.sql_ into PHPMyAdmin
 
 _Enjoy !_
