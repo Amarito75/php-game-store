@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@100;400;600&display=swap");
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	box-sizing: border-box;
+	padding: 0;
+}
+
+body {
+	background-color: #00a8e8;
+	padding: 30px 0;
+	min-height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: "Urbanist", sans-serif;
+	letter-spacing: 0.07em;
+}
+
+
+/* SCROLL BAR */
+::-webkit-scrollbar {
+	width: 10px;
+}
+  
+  ::-webkit-scrollbar-track {
+	background: #424242;
+}
+  
+  ::-webkit-scrollbar-thumb {
+	background: #686868;
+}
+  
+  ::-webkit-scrollbar-thumb:hover {
+	background: #7b7b7b;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    background-color: #1a1b1f;
+    overflow-y: auto;
+    height: 90vh;
+	width: 200vh;
+	border-radius: 20px;
+	box-shadow: 0 50px 100px rgba(0, 0, 0, 0.5);
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+nav {
+	width: 80px;
+	border-right: 2px solid #3a3c47;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 30px 20px;
+	color: white;
+    position: fixed;
+    left: 1.5cm;
+    top: 31vh
+}
+nav ul {
+	list-style: none;
+}
+
+nav ul li {
+	padding: 10px;
+	margin: 30px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+nav ul i {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+nav ul li:hover,
+nav li.active {
+	background-color: #3482e7;
+}
+nav ul li:hover i,
+nav li.active i {
+	color: white;
+}
+
+.title {
+    font-size: 1rem;
+	margin-bottom: 5px;
+	color: rgba(255, 255, 255, 0.8);
+}
+
+.price {
+    font-size: 0.9rem;
+    color: grey;
+}
+
+.game-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 100px;
+    max-width: 100%;
+	color: white;
+    gap: 15px;
+    margin: 160px;
+}
+
+.game-image-container {
+	height: 200px;
+	width: 400px;
+	overflow: hidden;
+    border-radius: 20px;
+	margin-bottom: 10px;
+}
+
+.pictures {
+	width: 80%;
+	height: 100%;
+	cursor: pointer;
+    border-radius: 20px;
+	transition: transform 0.2s linear;
+}
+.pictures:hover {
+	transform: scale(1.05);
+}
+
+.container-page {
+	display: flex;
+	flex-direction: column;
+	overflow-x: hidden;
+	position: relative;
+}
+
+.cover {
+	display: flex;
+	justify-content: center;
+	opacity: 0.6;
+}
+
+.big-title {
+	text-align: center;
+	font-size: 3rem;
+	margin-bottom: 5px;
+	color: rgba(255, 255, 255, 0.8);
+}
+
+
+.game-boxes {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.thumbnail-picture-boxes {
+	height: 400px;
+	width: 700px;
+	position: absolute;
+	top: 400px;
+	left: 150px;;
+}
+
+.infos-boxes {
+	border-radius: 32px;
+	height: 350px;
+	width: 650px;
+	position: absolute;
+	top: 400px;
+	right: 150px;;
+    backdrop-filter: blur(60px) saturate(100%);
+    -webkit-backdrop-filter: blur(60px) saturate(100%);
+    background-color: rgba(39,39,39,.15);
+	background-image: linear-gradient(1turn,var(--color-dark),rgba(39,39,39,0) 70%);
+}
+
+.infos {
+	position: absolute;
+	left: 150px;
+	top: 1000px;
+}
+
+.sign-up {
+	position: absolute;
+	transform: translate(-50%,-50%);
+	width: 300px;
+	height: 600px;;
+	top: 50%;
+	left: 25%;
+}
+
+form {
+	background-color: #00a8e8;
+	padding: 3em;
+	height: 400px;
+	border-radius: 20px;
+	border: 1px solid white;
+	backdrop-filter: blur(10px);
+	box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+	text-align: center;
+	position: relative;
+	transition: all 0.2s ease-in-out;
+}
+	
+p {
+    font-weight: 500;
+    color: white;
+    opacity: 0.7;
+    font-size: 1.4rem;
+    margin-top: 0;
+    margin-bottom: 60px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+a {
+    text-decoration: none;
+    color: #ddd;
+    font-size: 12px;
+}
+
+input {
+	background: transparent;
+	width: 200px;
+	padding: 1em;
+	margin-bottom: 2em;
+	border: none;
+	border: 1px solid white;
+	border-radius: 5000px;
+	backdrop-filter: blur(5px);
+	box-shadow: 4px 4px 60px rgba(0,0,0,0.2);
+	color: #fff;
+	font-weight: 500;
+	transition: all 0.2s ease-in-out;
+	text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+	
+}
+
+.description h1 {
+	color: white;
+}
+.comments h1 {
+	color: white;
+}
